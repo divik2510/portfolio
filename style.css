@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    height: 8vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 17px;
+    font-size: 25px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li :hover{
+    color: lightblue;
+    cursor: pointer;
+    text-shadow: 1px 1px lightgreen;
+    font-size: 22px;
+}
+
+.logo img{
+    width: 5vw;
+    height: 8vh;
+    margin-left: 3vw;
+}
+
+.bi{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+
+.socialmedia{
+    margin-right: 3vw;
+}
+
+#home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('bg/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.intro{
+    position: relative;
+    top: 27vh;
+    left: 42vw;
+    display: inline-block;
+    margin: auto;
+    text-align: end;
+}
+
+.intro :nth-child(3n+1){
+    font-size: 3rem;
+}
+
+.intro :nth-child(2){
+    font-size: 4rem;
+    color: #8c10ea;
+}
+
+.animate1{
+    animation: backInDown;
+    animation-delay: 1s;
+}
+
+.intro :nth-child(3){
+    font-size: 2.862rem;
+    color: #0881ff;
+}
+
+.animate2{
+    animation: nackInLeft;
+    animation-delay: 2s;
+}
+
+.animate3{
+    animation: backInLeft;
+    animation-delay: 6s;
+}
+
+
+#about{
+    height: 75vh;
+    width: 100vw;
+    background: rgb(190, 237, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.head-about{
+    font-size: 4rem;
+    margin: 6px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.content-about{
+    font-size: 2.5rem;
+    margin: 0rem 7rem;
+    font-family: 'Baloo 2', cursive;
+}
+
+.content-about span{
+    font-weight: bolder;
+}
+
+.containers{
+    display: grid;
+    grid-template-rows: repeat(2, 12vh);
+    grid-template-columns: repeat(3, 18vw);
+    grid-gap: 2rem 5rem;
+    margin-top: 2rem;
+}
+
+.aboutme{
+    font-size: 2rem;
+}
+
+#item-4 p{
+    font-size: 1.5rem;
+}
+
+#item-5 p{
+    font-size: 1.5rem;
+}
+
+.btn{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: rgb(182, 255, 182);
+    box-shadow: 3px 3px rgb(51 51 255);
+    font-size: 18px;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.buttonstyle :hover{
+    font-size: 15px;
+    background-color: rgb(237, 255, 253);
+    box-shadow: -3px -3px white;
+}
+
+.copyright{
+    height: 7vh;
+    width: 100vw;
+    background-color: blue;
+    font-size: 24px;
+}
+
+.copyright p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.head-skills{
+    font-size: 3rem;
+    font-family: 'Baloo 2', cursive;
+}
+
+.icons img{
+    width: 8vw;
+    height: 15vh;
+    margin: 5vh 2vh;
+}
+
+#work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 237, 255);
+}
+
+.head-work{
+    font-size: 3rem;
+    font-family: 'Baloo 2', cursive;
+}
+
+.container-work{
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mywork{
+    font-family: 'Baloo 2', cursive;
+    height: 35.4vh;
+    width: 25vw;
+    margin: 1rem 2rem;
+}
+
+.itemwork-1 img{
+    height: 35.4vh;
+    width: 25vw;
+    border: 5px dashed blue;
+    border-radius: 50px;
+}
+
+.itemwork-2 img{
+    height: 35.4vh;
+    width: 25vw;
+    border: 5px dashed blue;
+    border-radius: 50px;
+}
+
+.itemwork-3 img{
+    height: 35.4vh;
+    width: 25vw;
+    border: 5px dashed blue;
+    border-radius: 50px;
+}
